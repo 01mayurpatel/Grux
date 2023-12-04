@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     setInterval(() => {
-      
+
         try {
             var navBtns = document.getElementsByClassName('MenuLink');
             for (var i = 0; i < navBtns.length; i++) {
@@ -66,100 +66,107 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
 
-       try{
+        try {
             var tableItems = document.getElementsByClassName('TableItemWrapper');
-            for(var i=0;i<tableItems.length;i++){
-                if(tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') === 'sAVAX'){
-                    tableItems[i].style.display='none';
-                }else if(tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') === 'AVAX'){
-                    tableItems[i].style.display='none';
-                }else if(tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') != 'AVAX' && tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') != 'sAVAX'){
-                    tableItems[i].style.display='flex';
+            for (var i = 0; i < tableItems.length; i++) {
+                if (tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') === 'sAVAX') {
+                    tableItems[i].style.display = 'none';
+                } else if (tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') === 'AVAX') {
+                    tableItems[i].style.display = 'none';
+                } else if (tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') != 'AVAX' && tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') != 'sAVAX') {
+                    tableItems[i].style.display = 'flex';
 
                 }
             }
             // document.getElementsByClassName('TableItemWrapper')[4].style.display='none';
 
-       }catch(error){
+        } catch (error) {
 
-       }
-       try{
-        var tableItems = document.getElementsByClassName('MobileCardWrapper');
-        for(var i=0;i<tableItems.length;i++){
-            if(tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') === 'sAVAX'){
-                tableItems[i].style.display='none';
-            }else if(tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') === 'AVAX'){
-                tableItems[i].style.display='none';
-            }else if(tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') != 'AVAX' && tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') != 'sAVAX'){
-                tableItems[i].style.display='block';
+        }
+        try {
+            var tableItems = document.getElementsByClassName('MobileCardWrapper');
+            for (var i = 0; i < tableItems.length; i++) {
+                if (tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') === 'sAVAX') {
+                    tableItems[i].style.display = 'none';
+                } else if (tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') === 'AVAX') {
+                    tableItems[i].style.display = 'none';
+                } else if (tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') != 'AVAX' && tableItems[i].getElementsByClassName('TokenIcon__image')[0].getAttribute('alt') != 'sAVAX') {
+                    tableItems[i].style.display = 'block';
 
+                }
             }
+            // document.getElementsByClassName()[0].style.display='none';
+            // document.getElementsByClassName('MobileCardWrapper')[4].style.display='none';
+
+        } catch (error) {
+
         }
-        // document.getElementsByClassName()[0].style.display='none';
-        // document.getElementsByClassName('MobileCardWrapper')[4].style.display='none';
-
-   }catch(error){
-
-   }
 
 
-try {
-   var currencyOverview = document.getElementsByClassName('CurrencyOverview__captionLink');
-    for(var i=0;i<currencyOverview.length;i++){
-        if(currencyOverview[i].getElementsByTagName('p')[0].innerText === 'DAI (DAI.e) Reserve Overview'){
-            currencyOverview[i].getElementsByTagName('p')[0].innerText = 'DAI.e Reserve Overview'
+        try {
+            var currencyOverview = document.getElementsByClassName('CurrencyOverview__captionLink');
+            for (var i = 0; i < currencyOverview.length; i++) {
+                if (currencyOverview[i].getElementsByTagName('p')[0].innerText === 'DAI (DAI.e) Reserve Overview') {
+                    currencyOverview[i].getElementsByTagName('p')[0].innerText = 'DAI.e Reserve Overview'
+                }
+            }
+
+        } catch (error) {
+
         }
-    }
-    
-} catch (error) {
-    
-}   
 
 
-try {
-    var tokenItem = document.getElementsByClassName('TokenIconWithFullName');
-    console.log(tokenItem[0]);
-    for(var i=0;i<tokenItem.length;i++){
-        if(tokenItem[i].getElementsByTagName('img')[0].getAttribute('alt')==='DAI.e'){
-            tokenItem[i].getElementsByTagName('p')[0].innerHTML = '<b>DAI.e</b>'
+        try {
+            var tokenItem = document.getElementsByClassName('TokenIconWithFullName');
+          
+            for (var i = 0; i < tokenItem.length; i++) {
+                if (tokenItem[i].getElementsByTagName('img')[0].getAttribute('alt') === 'DAI.e') {
+                    tokenItem[i].getElementsByTagName('p')[0].innerHTML = '<b>DAI.e</b>'
+                }
+            }
+        } catch (error) {
+
         }
-    }
-} catch (error) {
-    
-}
 
 
 
         var logo = document.getElementsByClassName('Menu__logo-inner')[0];
-       
-
-
-
-     
-     
-
-    
-    
 
 
 
 
+
+
+
+
+
+
+
+
+        
+
+
+
+        try {
+            document.getElementsByClassName('Row__title-inner')[0].getElementsByClassName('Row__title')[0].innerText = "Your Balance in Grux"
+        } catch (error) {
             
-           
-            try {
-                document.getElementsByClassName('Row__title-inner')[0].getElementsByClassName('Row__title')[0].innerText="Your Balance in Grux"
-            } catch (error) {
-                
-            }
-           
+        }
+        try {
+            document.getElementsByClassName('CurrencyScreenWrapper__mobileInner')[0].getElementsByClassName('Row__title-inner')[0].getElementsByClassName('Row__title')[0].innerText = "Your Balance in Grux"
             
+        } catch (error) {
             
-            
-            
+        }
 
 
 
-        }, 1)
+
+
+
+
+
+    }, 1)
 
 });
 
