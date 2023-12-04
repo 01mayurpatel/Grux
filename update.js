@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
         } catch (error) {
             console.log("error");
         }
+        try{
+            document.getElementsByClassName('Menu__logo-link')[0].getElementsByTagName('img')[0].setAttribute('alt','Grux');
+        }catch(error){
+
+        }
         try {
             var navBtnsInner = document.getElementsByClassName('Menu__link-inner');
 
